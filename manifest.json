@@ -1,20 +1,20 @@
 {
-  "name": "logistica iasa",
-  "short_name": "logistica iasa",
-  "start_url": "https://logisticaiasa.vercel.app",
+  "name": "Logistica IASA",
+  "short_name": "IASA",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#00b09b",
   "icons": [
     {
-      "src": "descargaLOGO.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "d.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
