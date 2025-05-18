@@ -5,111 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <title>Document</title>
-    <style>
-        body {
-   background-image: linear-gradient(to right, #2575fc,#6a11cb );
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    background-size: cover; /* Esto asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita la imagen */
-}
+   <style>
+    body {
+        background-image: linear-gradient(to right, #6a11cb, #2575fc);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
+    h1 {
+        font-size: 32px;
+        color: #f5f5f5;
+        margin-bottom: 20px;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
 
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a.button-link {
+        display: block;
+        background-color: #5eead4; /* turquesa suave */
+        color: #1f2937; /* gris oscuro */
+        border: 2px solid #2dd4bf;
+        border-radius: 8px;
+        padding: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    a.button-link:hover {
+        background-color: #2dd4bf;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        background-color: #5eead4;
+        color: #1f2937;
+        border: 2px solid #2dd4bf;
+        border-radius: 8px;
+        padding: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+        background-color: #2dd4bf;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
         h1 {
-            font-size: 32px;
-            color: #ffffff;
-            margin-bottom: 20px;
-            text-align: center;
+            font-size: 24px;
         }
 
-        div {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 80%;
-            max-width: 400px;
+        button,
+        a.button-link {
+            font-size: 14px;
+            padding: 12px;
         }
-  a {
-    text-decoration: none;
-}
+    }
 
-/* Hacemos que el enlace ocupe todo el tamaño del botón */
-a.button-link {
-    display: block;
-    background-color: #00b09b; /* Color de fondo de botón */
-    color: white;
-    border: 2px solid #007a66; /* Borde más oscuro */
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el texto dentro del enlace */
-}
+    footer {
+        background-color: transparent;
+        color: #e0e0e0;
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
 
-a.button-link:hover {
-    background-color: #009688; /* Cambio de color en hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
+    footer h1 {
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+    }
 
+    footer h1 span {
+        font-weight: bold;
+        color: #a78bfa; /* violeta suave */
+    }
+</style>
 
-        button {
-    background-color: #00b09b; /* Color de fondo de botón */
-    color: white;
-    border: 2px solid #007a66; /* Borde más oscuro */
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-    background-color: #009688; /* Cambio de color en hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 24px;
-            }
-            
-            button, a.button-link {
-                font-size: 14px;
-                padding: 12px;
-            }
-        }
-         footer {
-    background-color:transparent; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center; /* Centramos el contenido */
-    padding: 20px; /* Espaciado interno */
-    font-family: Arial, sans-serif; /* Fuente */
-    position: fixed; /* Hacemos que el footer esté siempre al final */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    bottom: 0; /* Posicionado al fondo */
-}
-
-footer h1 {
-    font-size: 16px; /* Tamaño del texto */
-    font-weight: normal; /* Eliminar el grosor del título h1 */
-    margin: 0; /* Eliminamos el margen del h1 */
-}
-
-footer h1 span {
-    font-weight: bold; /* Hacemos el nombre más resaltado */
-}
-    </style>
 </head>
 <body>
     <!-- Título estilizado -->
