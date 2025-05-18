@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <title>Document</title>
-   <style>
+ <style>
     body {
-        background-image: linear-gradient(to right, #a18cd1, #fbc2eb); /* lavanda a rosa claro */
+        background: linear-gradient(to right, #e0e0e0, #f5f5f5);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
@@ -22,19 +22,18 @@
     }
 
     h1 {
-        font-size: 32px;
-        color: #ffffff;
-        margin-bottom: 20px;
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 25px;
         text-align: center;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     div {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        width: 80%;
-        max-width: 400px;
+        gap: 12px;
+        width: 90%;
+        max-width: 420px;
     }
 
     a {
@@ -43,38 +42,30 @@
 
     a.button-link {
         display: block;
-        background-color: #ff9a8b; /* coral suave */
+        background-color: #1976d2; /* azul profesional */
         color: #ffffff;
-        border: 2px solid #f37272;
-        border-radius: 12px;
-        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        padding: 14px;
         font-size: 16px;
         cursor: pointer;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.3s ease;
         text-align: center;
     }
 
     a.button-link:hover {
-        background-color: #f37272;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background-color: #1565c0;
     }
 
     button {
-        background-color: #8ec5fc; /* azul suave */
+        background-color: #90a4ae; /* gris azulado */
         color: #ffffff;
-        border: 2px solid #61a4f1;
-        border-radius: 12px;
-        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        padding: 14px;
         font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    button:hover {
-        background-color: #61a4f1;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        opacity: 0.8;
     }
 
     @media (max-width: 600px) {
@@ -91,7 +82,7 @@
 
     footer {
         background-color: transparent;
-        color: #ffffff;
+        color: #555;
         text-align: center;
         padding: 20px;
         font-family: Arial, sans-serif;
@@ -101,16 +92,17 @@
     }
 
     footer h1 {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
         margin: 0;
     }
 
     footer h1 span {
         font-weight: bold;
-        color: #ffe0f0; /* rosado claro */
+        color: #1976d2;
     }
 </style>
+
 
 </head>
 <body>
