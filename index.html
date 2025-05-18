@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <title>Document</title>
- <style>
+<style>
     body {
         background: linear-gradient(to right, #e0e0e0, #f5f5f5);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,16 +111,35 @@
     <!-- Título estilizado -->
     <h1>Bienvenido Pablo</h1>
     
-    <div>
-        <!-- Enlace estilizado como botón -->
-        <a href="https://docs.google.com/spreadsheets/d/14VtmRlGT6zJZfDvMwxPEGEcrtyxnG36I/edit?usp=drivesdk&ouid=112025782906316168552&rtpof=true&sd=true" target="_blank" class="button-link">
-            ITAKYRY
-        </a>
-        <button>PRÓXIMAMENTE...</button>
-        <button>PRÓXIMAMENTE...</button>
-        <button>PRÓXIMAMENTE...</button>
-        <button>PRÓXIMAMENTE...</button>
-    </div>
+   <div>
+    <a href="https://docs.google.com/spreadsheets/d/14VtmRlGT6zJZfDvMwxPEGEcrtyxnG36I/edit?usp=drivesdk&ouid=112025782906316168552&rtpof=true&sd=true" 
+       target="_blank" 
+       class="button-link">
+        <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">description</span>
+        ITAKYRY
+    </a>
+
+    <button disabled>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">pending</span>
+        PRÓXIMAMENTE...
+    </button>
+
+    <button disabled>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">pending</span>
+        PRÓXIMAMENTE...
+    </button>
+
+    <button disabled>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">pending</span>
+        PRÓXIMAMENTE...
+    </button>
+
+    <button disabled>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">pending</span>
+        PRÓXIMAMENTE...
+    </button>
+</div>
+
     <script>
   let deferredPrompt;
 
@@ -154,5 +175,6 @@
     </footer>
 </body>
 </html>
+
 
 
